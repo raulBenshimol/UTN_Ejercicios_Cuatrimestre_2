@@ -1,14 +1,4 @@
-
-const greeting: string = 'Hello, TypeScript!'; 
-console.log(greeting);
-
-// Crear una clase Vehiculo que tenga los atributos públicos marca, modelo y un atributo privado 
-// patente. 
-// ● Crear una instancia y asignarle valores; notar que el atributo privado no está disponible 
-// para la asignación de valores. 
-// ● Mostrar por pantalla los valores asignados.
-
-class Vehiculo {
+export default class Vehiculo {
     private _marca: string;
     private _modelo: string;
     private _patente: string;
@@ -41,9 +31,3 @@ class Vehiculo {
         console.log(`La patente es: ${this._patente}`)
     }
 }
-function main(): void {
-    const vehiculo1 = new Vehiculo("Chevrolet", "Corsa", "AF069CP")
-    console.log(vehiculo1.modelo);
-    vehiculo1.mostrarPorPantalla();
-}
-main();
